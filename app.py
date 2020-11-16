@@ -56,10 +56,7 @@ model.load_weights('mine_model_weights.h5')
 print("="*150)
 print("MODEL LOADED")
 
-#resnet = ResNet50(include_top=False,weights='imagenet',input_shape=(224,224,3),pooling='avg')
-
-
-resnet = load_model('resnet.h5')
+resnet = ResNet50(include_top=False,weights='imagenet',input_shape=(224,224,3),pooling='avg')
 
 print("="*150)
 print("RESNET MODEL LOADED")
